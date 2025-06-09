@@ -1,0 +1,24 @@
+{
+  "name": "xrpl.js-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev": "turbo watch build",
+    "lint": "turbo run lint",
+    "sort-package": "npx sort-package-json",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "pnpm@10.12.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
