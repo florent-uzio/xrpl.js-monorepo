@@ -10,10 +10,12 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "dev": "turbo watch build",
     "lint": "turbo run lint",
-    "sort-package": "npx sort-package-json",
+    "sort-package": "turbo run sort-package-json",
+    "sort-package-root": "npx sort-package-json",
     "test": "turbo run test"
   },
   "devDependencies": {
+    "@total-typescript/tsconfig": "^1.0.4",
     "prettier": "^3.5.3",
     "turbo": "^2.5.4"
   },

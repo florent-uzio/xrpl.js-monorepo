@@ -1,0 +1,16 @@
+{
+  "name": "env",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "sort-package-json": "npx sort-package-json"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "zod": "^3.25.56"
+  }
+}
