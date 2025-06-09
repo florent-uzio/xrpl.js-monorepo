@@ -2,6 +2,7 @@
   "name": "env",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "exports": {
     ".": "./dist/index.js"
   },
