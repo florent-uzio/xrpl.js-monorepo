@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "sort-package-json": "npx sort-package-json"
+    "sort-package-json": "pnpm dlx sort-package-json",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "dotenv": "^16.5.0",

@@ -2,6 +2,9 @@
   "$schema": "https://turbo.build/schema.json",
   "daemon": true,
   "tasks": {
+    "clean": {
+      "cache": false
+    },
     "setup": {
       "dependsOn": ["build"],
       "cache": false
@@ -21,7 +24,7 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist", "*.tsbuildinfo", ".next", "build"],
+      "outputs": [".mastra/**", "dist"],
       "cache": true
     },
     "start": {
