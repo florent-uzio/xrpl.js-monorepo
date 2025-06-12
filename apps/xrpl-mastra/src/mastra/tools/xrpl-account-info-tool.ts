@@ -11,8 +11,9 @@ const networks = {
 } as const;
 
 export const xrplAccountInfoTool = createTool({
-  id: "xrpl-tool",
-  description: "A tool for interacting with the XRP Ledger",
+  id: "account-info",
+  description:
+    "The account_info command retrieves information about an account, its activity, its flags and its XRP balance. All information retrieved is relative to a particular version of the ledger.",
   inputSchema: z.object({
     request: accountInfoRequestSchema,
     network: z.enum(["mainnet", "testnet", "devnet"]),
