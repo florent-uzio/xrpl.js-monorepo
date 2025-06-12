@@ -33,3 +33,16 @@ yarn-error.log*
 
 # vercel
 .vercel 
+
+# build info
+*.tsbuildinfo
+
+# Mastra
+output.txt
+node_modules
+dist
+.mastra
+.env.development
+.env
+*.db
+*.db-*

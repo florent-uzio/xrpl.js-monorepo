@@ -1,0 +1,21 @@
+{
+  "name": "xrpl-schemas",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "sort-package-json": "pnpm dlx sort-package-json",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.0",
+  "dependencies": {
+    "zod": "^3.25.56"
+  }
+}
