@@ -9,6 +9,7 @@
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
     "dev": "turbo watch build",
+    "dev:remotion": "turbo run dev --filter=remotion-subtitles-renderer",
     "lint": "turbo run lint",
     "sort-package": "turbo run sort-package-json",
     "sort-package-root": "pnpm dlx sort-package-json",
