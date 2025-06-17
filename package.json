@@ -10,6 +10,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "dev": "turbo watch build",
     "dev:remotion": "turbo run dev --filter=remotion-subtitles-renderer",
+    "dev:mastra": "turbo run dev --filter=xrpl-mastra",
     "lint": "turbo run lint",
     "sort-package": "turbo run sort-package-json",
     "sort-package-root": "pnpm dlx sort-package-json",

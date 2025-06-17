@@ -2,7 +2,7 @@ import { openai } from "@ai-sdk/openai";
 import { Agent } from "@mastra/core/agent";
 import { Memory } from "@mastra/memory";
 import { LibSQLStore } from "@mastra/libsql";
-import { xrplAccountInfoTool } from "../tools/xrpl-account-info-tool";
+import { xrplAccountInfo } from "../tools/xrpl-account-info-tool";
 
 export const xrplAgent = new Agent({
   name: "XRPL Agent",
@@ -13,10 +13,12 @@ export const xrplAgent = new Agent({
       - Keep responses concise but informative
       - Make sure to confirm the network (devnet, testnet, mainnet)
 
-      Use the xrplTool to fetch current XRPL data and submit transactions to the XRP Ledger.
+      Use the xrpl tools to fetch current XRPL data and submit transactions to the XRP Ledger.
 `,
   model: openai("gpt-4o-mini"),
-  tools: { xrplTool: xrplAccountInfoTool },
+  tools: {
+    xrplAccountInfo,
+  },
   memory: new Memory({
     storage: new LibSQLStore({
       url: "file:../mastra.db", // path is relative to the .mastra/output directory
